@@ -1,0 +1,53 @@
+.upload-section { display: flex; flex-direction: column; gap: 3rem; }
+
+.hero { text-align: center; padding: 2rem 0 1rem; }
+.hero-title { font-family: var(--font-heading); font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.2; letter-spacing: -0.03em; margin-bottom: 1rem; }
+.accent-text { color: var(--accent); }
+.hero-sub { font-size: 16px; color: var(--text2); }
+
+.input-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem; }
+
+.drop-zone { border: 1.5px dashed var(--border2); border-radius: var(--radius); padding: 2rem; text-align: center; cursor: pointer; transition: all 0.2s; }
+.drop-zone:hover, .drop-zone.dragging { border-color: var(--accent); background: rgba(110, 231, 183, 0.04); }
+.drop-zone.has-file { border-color: var(--accent); border-style: solid; }
+.drop-icon { font-size: 28px; margin-bottom: 8px; color: var(--accent); }
+.drop-label { font-size: 15px; color: var(--text); font-weight: 500; }
+.drop-hint { font-size: 12px; color: var(--text3); margin-top: 4px; }
+
+.divider { text-align: center; margin: 1.5rem 0; position: relative; }
+.divider::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--border); }
+.divider span { position: relative; background: var(--bg2); padding: 0 1rem; font-size: 13px; color: var(--text3); }
+
+.resume-input { width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; color: var(--text); font-family: var(--font-body); font-size: 14px; line-height: 1.7; resize: vertical; transition: border-color 0.2s; }
+.resume-input:focus { outline: none; border-color: var(--border2); }
+.resume-input::placeholder { color: var(--text3); }
+
+.error-box { background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: var(--radius); padding: 12px 16px; font-size: 14px; color: #fca5a5; margin-top: 1rem; }
+
+.analyze-btn { width: 100%; margin-top: 1rem; padding: 14px; font-family: var(--font-heading); font-size: 16px; font-weight: 600; background: linear-gradient(135deg, #6ee7b7, #38bdf8); color: #0a0f1e; border: none; border-radius: var(--radius); cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: opacity 0.2s, transform 0.1s; }
+.analyze-btn:hover:not(:disabled) { opacity: 0.92; transform: translateY(-1px); }
+.analyze-btn:active:not(:disabled) { transform: translateY(0); }
+.analyze-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn-arrow { font-size: 18px; }
+
+.privacy-note { text-align: center; font-size: 12px; color: var(--text3); margin-top: 10px; }
+
+.format-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem; }
+.format-badge { font-size: 11px; font-weight: 500; padding: 4px 10px; border-radius: 20px; background: rgba(110, 231, 183, 0.08); color: var(--accent); border: 1px solid rgba(110, 231, 183, 0.2); letter-spacing: 0.04em; }
+
+.image-preview { margin-top: 1rem; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border2); }
+.image-preview img { width: 100%; max-height: 300px; object-fit: contain; background: var(--bg3); display: block; }
+.image-note { font-size: 12px; color: var(--accent); padding: 8px 12px; background: rgba(110,231,183,0.06); text-align: center; }
+
+.section-title { font-family: var(--font-heading); font-size: 22px; font-weight: 700; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+.step-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.step-num { font-family: var(--font-heading); font-size: 13px; color: var(--accent); font-weight: 700; margin-bottom: 8px; }
+.step-title { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+.step-desc { font-size: 13px; color: var(--text2); }
+
+.faq-section { display: flex; flex-direction: column; gap: 1px; }
+.faq-item { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; margin-bottom: 8px; }
+.faq-q { font-size: 15px; font-weight: 500; margin-bottom: 6px; }
+.faq-a { font-size: 14px; color: var(--text2); }
