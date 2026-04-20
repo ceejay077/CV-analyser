@@ -1,15 +1,16 @@
 import React from 'react';
 import './Footer.css';
 
-export default function Footer() {
+export default function Footer({ onNavigate }) {
   return (
     <footer className="footer">
       <div className="footer-inner">
         <span className="footer-logo">◈ CV Analyser</span>
-        <span className="footer-copy">Free AI Resume Analysis · Powered by Google Gemini</span>
+        <span className="footer-copy">Free AI Resume Analysis · Powered by Groq AI</span>
         <div className="footer-links">
-          <a href="#privacy">Privacy</a>
-          <a href="#terms">Terms</a>
+          <button onClick={() => onNavigate('privacy')}>Privacy</button>
+          <button onClick={() => onNavigate('terms')}>Terms</button>
+          <button onClick={() => onNavigate('how')}>How it works</button>
         </div>
       </div>
     </footer>

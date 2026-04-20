@@ -1,0 +1,13 @@
+SEO Optimize
+ SEO add titles
+ SEO descriptions
+ i want to add images with alt texts
+ also want to add schema markup and og tags
+hero section
+features
+testimonials
+remove google ads placments for now. after traffic is comming I can implement it latter
+how ATS Scanner works and how does this app good for ats scanners
+
+
+get domain name and server for react
